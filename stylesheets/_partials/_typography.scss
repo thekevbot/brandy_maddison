@@ -1,3 +1,7 @@
+/*=============================
+ FONTS
+=============================*/
+
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700);
 
@@ -65,4 +69,60 @@
 }
 .icon-instagram:before {
   content: "\66";
+}
+
+/*=============================
+ TYPOGRAPHY
+=============================*/
+
+h1, h2 {
+  font-family: 'Kat Tail';
+  font-size: 60px;
+  color: #DDBCB0;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: 'Raleway';
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #DDBCB0;
+}
+
+h4, h5, h6 {}
+
+p {
+  font-family: 'Libre Baskerville';
+  font-size: 18px;
+  line-height: 30px;
+  color: #767662;
+}
+
+a:hover {}
+
+hr {
+  width: 60%;
+  height: 2px;
+  margin: 60px auto;
+  border: none;
+  background-color: #BBB0A6;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignright {
+  text-align: right;
 }

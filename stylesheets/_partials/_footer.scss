@@ -1,0 +1,26 @@
+/*=============================
+ FOOTER
+=============================*/
+
+footer {
+  width: 100%;
+  padding: 60px 0;
+  font-family: 'Raleway';
+  text-align: center;
+  background-image: url('img/bg-footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #DDBCB0;
+  .social-nav {
+    font-size: 24px;
+  }
+}
+
+.colophon {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+}

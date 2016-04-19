@@ -1,0 +1,79 @@
+/*=============================
+ NAVIGATION
+=============================*/
+
+header {
+  width: 100%;
+}
+
+.main-nav-wrapper {
+  padding: 60px 0;
+  position: relative;
+  .social-nav {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+    font-size: 18px;
+  }
+}
+
+#client-login {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+}
+
+.main-nav-wrapper ul {
+  padding: 0;
+}
+
+ul.main-nav {
+  width: 100%;
+  display: table;
+  position: relative;
+  list-style: none;
+  font-family: 'Raleway';
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  li {
+    display: inline-block;
+    a {
+      color: #767662;
+    }
+  }
+}
+
+.nav-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.nav-left, .nav-right {
+  width: 31.5%;
+}
+
+.nav-cell ul li {
+  width: 32.5%;
+  text-align: center;
+}
+
+.nav-logo {
+  width: 35%;
+  max-width: 320px;
+  margin: 0 1%;
+  padding: 20px;
+  border: 2px solid #d6afa0;
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-mobile-menu {
+    display: none !important;
+  }
+}
