@@ -4,8 +4,6 @@
     <title>Brandy Maddison Events</title>
 
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="css/unslider.css" type="text/css" rel="stylesheet">
-    <link href="css/unslider-dots.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
