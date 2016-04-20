@@ -108,14 +108,14 @@
 @font-face {
   font-family: 'Kat Tail';
   src: url("../fonts/hallmark_-_kat_tail_hmk-webfont.eot");
-  src: url("../fonts/hallmark_-_kat_tail_hmk-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/hallmark_-_kat_tail_hmk-webfont.woff2") format("woff2"), url("../fonts/hallmark_-_kat_tail_hmk-webfont.woff") format("woff"), url("../fonts/hallmark_-_kat_tail_hmk-webfont.ttf") format("truetype"), url("../fonts/hallmark_-_kat_tail_hmk-webfont.svg#kat_tail_hmkregular") format("svg");
+  src: url("../fonts/hallmark_-_kat_tail_hmk-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/hallmark_-_kat_tail_hmk-webfont.woff2") format("woff2"), url("fonts/hallmark_-_kat_tail_hmk-webfont.woff") format("woff"), url("fonts/hallmark_-_kat_tail_hmk-webfont.ttf") format("truetype"), url("fonts/hallmark_-_kat_tail_hmk-webfont.svg#kat_tail_hmkregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "bme-icons";
-  src: url("../fonts/bme-icons.eot");
-  src: url("../fonts/bme-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/bme-icons.woff") format("woff"), url("../fonts/bme-icons.ttf") format("truetype"), url("../fonts/bme-icons.svg#bme-icons") format("svg");
+  src: url("fonts/bme-icons.eot");
+  src: url("fonts/bme-icons.eot?#iefix") format("embedded-opentype"), url("fonts/bme-icons.woff") format("woff"), url("fonts/bme-icons.ttf") format("truetype"), url("fonts/bme-icons.svg#bme-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -320,18 +320,24 @@ ul {
   text-transform: none;
   font-size: 72px;
 }
+/* line 78, stylesheets/_partials/_universal.scss */
+.btn.btn-email .icon {
+  font-size: 30px;
+  float: left;
+  margin: -6px 10px 0 0;
+}
 
-/* line 79, stylesheets/_partials/_universal.scss */
+/* line 86, stylesheets/_partials/_universal.scss */
 .btn-xs span {
   padding: 5px 20px;
 }
 
-/* line 83, stylesheets/_partials/_universal.scss */
+/* line 90, stylesheets/_partials/_universal.scss */
 .btn-xl span {
   padding: 35px 40px 25px 40px;
 }
 
-/* line 87, stylesheets/_partials/_universal.scss */
+/* line 94, stylesheets/_partials/_universal.scss */
 .btn-gold {
   color: #DDBCB0;
   background: -moz-linear-gradient(left, #cda349 0%, #e2c675 22%, #edd6a1 49%, #ebd39a 55%, #e2c675 72%, #cda349 100%);
@@ -343,18 +349,18 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda349', endColorstr='#cda349',GradientType=1 );
   /* IE6-9 */
 }
-/* line 97, stylesheets/_partials/_universal.scss */
+/* line 104, stylesheets/_partials/_universal.scss */
 .btn-gold:focus, .btn-gold:hover {
   color: #DDBCB0;
 }
 
 /* Instagram Feed */
-/* line 104, stylesheets/_partials/_universal.scss */
+/* line 111, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 107, stylesheets/_partials/_universal.scss */
+/* line 114, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -362,12 +368,12 @@ ul {
   padding-left: 5px;
   position: relative;
 }
-/* line 114, stylesheets/_partials/_universal.scss */
+/* line 121, stylesheets/_partials/_universal.scss */
 .insta-feed.lg a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 118, stylesheets/_partials/_universal.scss */
+/* line 125, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -495,8 +501,17 @@ footer {
 footer .social-nav {
   font-size: 24px;
 }
+/* line 18, stylesheets/_partials/_footer.scss */
+footer .btn-email {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 30px;
+  color: #fff;
+  text-transform: none;
+  letter-spacing: normal;
+}
 
-/* line 20, stylesheets/_partials/_footer.scss */
+/* line 28, stylesheets/_partials/_footer.scss */
 .colophon {
   display: block;
   font-size: 18px;

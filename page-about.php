@@ -1,13 +1,9 @@
 <?php require_once('header.php'); ?>
 
     <section class="container aligncenter">
-        <div class="banner banner-slider">
-            <ul>
-                <li><img src="img/banner-home-1.jpg" alt=""/></li>
-                <li><img src="img/banner-home-2.jpg" alt=""/></li>
-                <li><img src="img/banner-home-3.jpg" alt=""/></li>
-                <li><img src="img/banner-home-4.jpg" alt=""/></li>
-            </ul>
+        <div class="banner">
+            <h1 class="page-head"><span>About Us</span></h1>
+            <img src="img/banner-about-1.jpg" alt=""/>
         </div>
         <div class="row">
             <div class="content narrow">
@@ -42,5 +38,5 @@
             </div>
         </div>
     </section>
-    
+
 <?php require_once('footer.php'); ?>

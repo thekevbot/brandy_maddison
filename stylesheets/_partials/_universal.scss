@@ -74,6 +74,13 @@
     text-transform: none;
     font-size: 72px;
   }
+  &.btn-email{
+    .icon{
+        font-size:30px;
+        float:left;
+        margin:-6px 10px 0 0;
+    }
+  }
 }
 
 .btn-xs span {
