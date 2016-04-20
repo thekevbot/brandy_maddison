@@ -10,10 +10,10 @@
 </footer>
 
 <!-- SCRIPTS -->
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/unslider-min.js"></script>
-<script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
-<script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+<script src="//stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+<script src="//stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
 <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
