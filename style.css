@@ -181,13 +181,18 @@
  TYPOGRAPHY
 =============================*/
 /* line 78, stylesheets/_partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* line 82, stylesheets/_partials/_typography.scss */
 h1, h2 {
   font-family: 'Kat Tail';
   font-size: 60px;
-  color: #DDBCB0;
+  color: #ddbcb0;
 }
 
-/* line 84, stylesheets/_partials/_typography.scss */
+/* line 88, stylesheets/_partials/_typography.scss */
 h3 {
   margin-top: 0;
   font-family: 'Raleway';
@@ -195,10 +200,20 @@ h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #DDBCB0;
+  color: #ddbcb0;
 }
 
-/* line 96, stylesheets/_partials/_typography.scss */
+/* line 100, stylesheets/_partials/_typography.scss */
+h5 {
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #767662;
+}
+
+/* line 109, stylesheets/_partials/_typography.scss */
 p {
   font-family: 'Libre Baskerville';
   font-size: 18px;
@@ -206,7 +221,7 @@ p {
   color: #767662;
 }
 
-/* line 105, stylesheets/_partials/_typography.scss */
+/* line 118, stylesheets/_partials/_typography.scss */
 hr {
   width: 60%;
   height: 2px;
@@ -215,25 +230,44 @@ hr {
   background-color: #BBB0A6;
 }
 
-/* line 113, stylesheets/_partials/_typography.scss */
+/* line 126, stylesheets/_partials/_typography.scss */
 ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 118, stylesheets/_partials/_typography.scss */
+/* line 131, stylesheets/_partials/_typography.scss */
 .alignleft {
   text-align: left;
 }
 
-/* line 122, stylesheets/_partials/_typography.scss */
+/* line 135, stylesheets/_partials/_typography.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 126, stylesheets/_partials/_typography.scss */
+/* line 139, stylesheets/_partials/_typography.scss */
 .alignright {
   text-align: right;
+}
+
+/* Template Typography */
+/* line 145, stylesheets/_partials/_typography.scss */
+h1.page-head {
+  margin: 0;
+  padding: 4px;
+  display: inline-block;
+  border: 2px solid rgba(221, 188, 176, 0.8);
+  font-weight: 300;
+  color: #fff;
+}
+/* line 152, stylesheets/_partials/_typography.scss */
+h1.page-head span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 5px 60px;
+  background-color: rgba(221, 188, 176, 0.8);
 }
 
 /*=============================
@@ -255,35 +289,52 @@ ul {
 .content.narrow {
   max-width: 960px;
 }
+/* line 17, stylesheets/_partials/_universal.scss */
+.content.extra-narrow {
+  max-width: 768px;
+}
 
-/*** COMPONENTS ***/
+/* line 22, stylesheets/_partials/_universal.scss */
+.wrapper {
+  width: 100%;
+  display: table;
+}
+/* line 25, stylesheets/_partials/_universal.scss */
+.wrapper .wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*=============================
+ COMPONENENTS
+=============================*/
 /* Social Buttons */
-/* line 23, stylesheets/_partials/_universal.scss */
+/* line 37, stylesheets/_partials/_universal.scss */
 .social-nav {
   list-style: none;
 }
-/* line 25, stylesheets/_partials/_universal.scss */
+/* line 39, stylesheets/_partials/_universal.scss */
 .social-nav li {
   display: inline-block;
   margin: 0 3px;
 }
-/* line 28, stylesheets/_partials/_universal.scss */
+/* line 42, stylesheets/_partials/_universal.scss */
 .social-nav li a:hover {
   text-decoration: none;
 }
 
-/* line 34, stylesheets/_partials/_universal.scss */
+/* line 48, stylesheets/_partials/_universal.scss */
 .social-dark a {
   color: #BBB0A6;
 }
 
-/* line 38, stylesheets/_partials/_universal.scss */
+/* line 52, stylesheets/_partials/_universal.scss */
 .social-light a {
   color: #FFF;
 }
 
 /* Buttons */
-/* line 44, stylesheets/_partials/_universal.scss */
+/* line 58, stylesheets/_partials/_universal.scss */
 .btn {
   padding: 2px;
   display: inline-block;
@@ -294,17 +345,17 @@ ul {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 53, stylesheets/_partials/_universal.scss */
+/* line 67, stylesheets/_partials/_universal.scss */
 .btn:hover {
   text-decoration: none;
 }
 
-/* line 58, stylesheets/_partials/_universal.scss */
+/* line 72, stylesheets/_partials/_universal.scss */
 .btn-block {
   display: block;
 }
 
-/* line 63, stylesheets/_partials/_universal.scss */
+/* line 77, stylesheets/_partials/_universal.scss */
 .btn span {
   width: 100%;
   height: 100%;
@@ -312,7 +363,7 @@ ul {
   display: block;
   background-color: #fff;
 }
-/* line 70, stylesheets/_partials/_universal.scss */
+/* line 84, stylesheets/_partials/_universal.scss */
 .btn em {
   display: block;
   font-family: 'Kat Tail';
@@ -320,24 +371,24 @@ ul {
   text-transform: none;
   font-size: 72px;
 }
-/* line 78, stylesheets/_partials/_universal.scss */
+/* line 92, stylesheets/_partials/_universal.scss */
 .btn.btn-email .icon {
   font-size: 30px;
   float: left;
   margin: -6px 10px 0 0;
 }
 
-/* line 86, stylesheets/_partials/_universal.scss */
+/* line 100, stylesheets/_partials/_universal.scss */
 .btn-xs span {
   padding: 5px 20px;
 }
 
-/* line 90, stylesheets/_partials/_universal.scss */
+/* line 104, stylesheets/_partials/_universal.scss */
 .btn-xl span {
   padding: 35px 40px 25px 40px;
 }
 
-/* line 94, stylesheets/_partials/_universal.scss */
+/* line 108, stylesheets/_partials/_universal.scss */
 .btn-gold {
   color: #DDBCB0;
   background: -moz-linear-gradient(left, #cda349 0%, #e2c675 22%, #edd6a1 49%, #ebd39a 55%, #e2c675 72%, #cda349 100%);
@@ -349,18 +400,61 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda349', endColorstr='#cda349',GradientType=1 );
   /* IE6-9 */
 }
-/* line 104, stylesheets/_partials/_universal.scss */
+/* line 118, stylesheets/_partials/_universal.scss */
 .btn-gold:focus, .btn-gold:hover {
   color: #DDBCB0;
 }
 
+/* Images */
+/* line 125, stylesheets/_partials/_universal.scss */
+.mobile-crop {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 131, stylesheets/_partials/_universal.scss */
+.mobile-crop.circle {
+  border-radius: 50%;
+}
+/* line 134, stylesheets/_partials/_universal.scss */
+.mobile-crop img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 143, stylesheets/_partials/_universal.scss */
+img.fw {
+  width: 100%;
+}
+/* line 146, stylesheets/_partials/_universal.scss */
+img.fh {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 152, stylesheets/_partials/_universal.scss */
+  .mobile-crop {
+    height: auto;
+    padding: 0;
+    overflow: visible;
+  }
+  /* line 156, stylesheets/_partials/_universal.scss */
+  .mobile-crop img {
+    position: static;
+    transform: translate(0);
+  }
+}
 /* Instagram Feed */
-/* line 111, stylesheets/_partials/_universal.scss */
+/* line 165, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 114, stylesheets/_partials/_universal.scss */
+/* line 168, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -368,18 +462,24 @@ ul {
   padding-left: 5px;
   position: relative;
 }
-/* line 121, stylesheets/_partials/_universal.scss */
+/* line 175, stylesheets/_partials/_universal.scss */
 .insta-feed.lg a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 125, stylesheets/_partials/_universal.scss */
+/* line 179, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* Logo Lists */
+/* line 191, stylesheets/_partials/_universal.scss */
+.logo-list .wrapper-inner {
+  padding: 0 30px;
 }
 
 /*=============================
@@ -478,8 +578,19 @@ ul.main-nav li a {
  BANNERS
 =============================*/
 /* line 5, stylesheets/_partials/_banners.scss */
+.banner {
+  position: relative;
+}
+/* line 7, stylesheets/_partials/_banners.scss */
 .banner img {
   width: 100%;
+}
+/* line 10, stylesheets/_partials/_banners.scss */
+.banner .page-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*=============================

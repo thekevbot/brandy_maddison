@@ -14,9 +14,23 @@
   &.narrow {
     max-width: 960px;
   }
+  &.extra-narrow{
+      max-width:768px;
+  }
 }
 
-/*** COMPONENTS ***/
+.wrapper{
+    width:100%;
+    display:table;
+    .wrapper-inner{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/*=============================
+ COMPONENENTS
+=============================*/
 
 /* Social Buttons */
 
@@ -106,6 +120,46 @@
   }
 }
 
+/* Images */
+
+.mobile-crop{
+    width:100%;
+    height:0;
+    padding-top:100%;
+    overflow:hidden;
+    position:relative;
+    &.circle{
+        border-radius:50%;
+    }
+    img{
+        position:absolute;
+        top:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
+
+img{
+    &.fw{
+        width:100%;
+    }
+    &.fh{
+        width:100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-crop{
+        height:auto;
+        padding:0;
+        overflow: visible;
+        img{
+            position: static;
+            transform:translate(0);
+        }
+    }
+}
+
 /* Instagram Feed */
 
 .insta-feed {
@@ -129,4 +183,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+/* Logo Lists */
+
+.logo-list{
+    .wrapper-inner{
+        padding:0 30px;
+    }
 }
