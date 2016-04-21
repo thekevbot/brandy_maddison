@@ -1,0 +1,29 @@
+.article-head{
+    width:100%;
+    margin:30px 0;
+    padding:30px 0;
+    border-top:2px solid $sand;
+    border-bottom:2px solid $sand;
+    h3{
+        margin:0 0 15px 0;
+    }
+    .article-date{
+        display:inline-block;
+        font-family:'Libre Baskerville';
+        font-style: italic;
+        font-size:18px;
+        color:$bronze;
+    }
+    .categories{
+        margin-left:15px;
+        padding-left:15px;
+        display:inline-block;
+        font-family:'Libre Baskerville';
+        font-size:18px;
+        color:$bronze;
+        border-left:1px solid $bronze;
+        li{
+            display:inline;
+        }
+    }
+}

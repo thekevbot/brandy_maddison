@@ -202,8 +202,14 @@ h3 {
   font-weight: 400;
   color: #ddbcb0;
 }
+/* line 96, stylesheets/_partials/_typography.scss */
+h3.script {
+  font-family: 'Kat Tail';
+  text-transform: none;
+  letter-spacing: 0;
+}
 
-/* line 100, stylesheets/_partials/_typography.scss */
+/* line 106, stylesheets/_partials/_typography.scss */
 h5 {
   font-family: 'Raleway';
   font-size: 20px;
@@ -213,7 +219,7 @@ h5 {
   color: #767662;
 }
 
-/* line 109, stylesheets/_partials/_typography.scss */
+/* line 115, stylesheets/_partials/_typography.scss */
 p {
   font-family: 'Libre Baskerville';
   font-size: 18px;
@@ -221,7 +227,7 @@ p {
   color: #767662;
 }
 
-/* line 118, stylesheets/_partials/_typography.scss */
+/* line 124, stylesheets/_partials/_typography.scss */
 hr {
   width: 60%;
   height: 2px;
@@ -230,29 +236,29 @@ hr {
   background-color: #BBB0A6;
 }
 
-/* line 126, stylesheets/_partials/_typography.scss */
+/* line 132, stylesheets/_partials/_typography.scss */
 ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 131, stylesheets/_partials/_typography.scss */
+/* line 137, stylesheets/_partials/_typography.scss */
 .alignleft {
   text-align: left;
 }
 
-/* line 135, stylesheets/_partials/_typography.scss */
+/* line 141, stylesheets/_partials/_typography.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 139, stylesheets/_partials/_typography.scss */
+/* line 145, stylesheets/_partials/_typography.scss */
 .alignright {
   text-align: right;
 }
 
 /* Template Typography */
-/* line 145, stylesheets/_partials/_typography.scss */
+/* line 151, stylesheets/_partials/_typography.scss */
 h1.page-head {
   margin: 0;
   padding: 4px;
@@ -261,7 +267,7 @@ h1.page-head {
   font-weight: 300;
   color: #fff;
 }
-/* line 152, stylesheets/_partials/_typography.scss */
+/* line 158, stylesheets/_partials/_typography.scss */
 h1.page-head span {
   width: 100%;
   height: 100%;
@@ -463,11 +469,16 @@ img.fh {
   position: relative;
 }
 /* line 175, stylesheets/_partials/_universal.scss */
-.insta-feed.lg a {
+.insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
 /* line 179, stylesheets/_partials/_universal.scss */
+.insta-feed.col-2 a {
+  width: 50%;
+  padding-top: 50%;
+}
+/* line 183, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -477,7 +488,7 @@ img.fh {
 }
 
 /* Logo Lists */
-/* line 191, stylesheets/_partials/_universal.scss */
+/* line 195, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
@@ -591,6 +602,61 @@ ul.main-nav li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*=============================
+ SIDEBAR
+=============================*/
+/* line 6, stylesheets/_partials/_sidebar.scss */
+.sidebar .social-nav {
+  margin: 30px 0;
+  padding: 30px 0;
+  text-align: center;
+  border-top: 2px solid #BBB0A6;
+  border-bottom: 2px solid #BBB0A6;
+}
+/* line 12, stylesheets/_partials/_sidebar.scss */
+.sidebar .social-nav .social-btn {
+  font-size: 32px;
+}
+/* line 14, stylesheets/_partials/_sidebar.scss */
+.sidebar .social-nav .social-btn a {
+  color: #ddbcb0;
+}
+
+/* line 1, stylesheets/_partials/_journal.scss */
+.article-head {
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px 0;
+  border-top: 2px solid #BBB0A6;
+  border-bottom: 2px solid #BBB0A6;
+}
+/* line 7, stylesheets/_partials/_journal.scss */
+.article-head h3 {
+  margin: 0 0 15px 0;
+}
+/* line 10, stylesheets/_partials/_journal.scss */
+.article-head .article-date {
+  display: inline-block;
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-size: 18px;
+  color: #767662;
+}
+/* line 17, stylesheets/_partials/_journal.scss */
+.article-head .categories {
+  margin-left: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  font-family: 'Libre Baskerville';
+  font-size: 18px;
+  color: #767662;
+  border-left: 1px solid #767662;
+}
+/* line 25, stylesheets/_partials/_journal.scss */
+.article-head .categories li {
+  display: inline;
 }
 
 /*=============================

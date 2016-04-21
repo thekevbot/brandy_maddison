@@ -37,7 +37,8 @@
         <hr>
         <div class="row">
             <h3>The Latest on Instagram</h3>
-            <div class="insta-feed lg">
+            <div class="insta-feed col-5">
+                <?php $pull_cnt = 5; ?>
                 <?php require_once 'inc/instafeed.php'; ?>
             </div>
         </div>
