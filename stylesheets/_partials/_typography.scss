@@ -1,5 +1,5 @@
 /*=============================
- FONTS
+FONTS
 =============================*/
 
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
@@ -9,95 +9,96 @@
     font-family: 'Kat Tail';
     src: url('../fonts/hallmark_-_kat_tail_hmk-webfont.eot');
     src: url('../fonts/hallmark_-_kat_tail_hmk-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/hallmark_-_kat_tail_hmk-webfont.woff2') format('woff2'),
-         url('fonts/hallmark_-_kat_tail_hmk-webfont.woff') format('woff'),
-         url('fonts/hallmark_-_kat_tail_hmk-webfont.ttf') format('truetype'),
-         url('fonts/hallmark_-_kat_tail_hmk-webfont.svg#kat_tail_hmkregular') format('svg');
+    url('fonts/hallmark_-_kat_tail_hmk-webfont.woff2') format('woff2'),
+    url('fonts/hallmark_-_kat_tail_hmk-webfont.woff') format('woff'),
+    url('fonts/hallmark_-_kat_tail_hmk-webfont.ttf') format('truetype'),
+    url('fonts/hallmark_-_kat_tail_hmk-webfont.svg#kat_tail_hmkregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-  font-family: "bme-icons";
-  src:url("fonts/bme-icons.eot");
-  src:url("fonts/bme-icons.eot?#iefix") format("embedded-opentype"),
+    font-family: "bme-icons";
+    src:url("fonts/bme-icons.eot");
+    src:url("fonts/bme-icons.eot?#iefix") format("embedded-opentype"),
     url("fonts/bme-icons.woff") format("woff"),
     url("fonts/bme-icons.ttf") format("truetype"),
     url("fonts/bme-icons.svg#bme-icons") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 
 }
 [data-icon]:before {
-  font-family: "bme-icons" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "bme-icons" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "bme-icons" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "bme-icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .icon-phone:before {
-  content: "\61";
+    content: "\61";
 }
 .icon-mail:before {
-  content: "\62";
+    content: "\62";
 }
 .icon-facebook:before {
-  content: "\63";
+    content: "\63";
 }
 .icon-twitter:before {
-  content: "\64";
+    content: "\64";
 }
 .icon-pinterest:before {
-  content: "\65";
+    content: "\65";
 }
 .icon-instagram:before {
-  content: "\66";
+    content: "\66";
 }
 
 /*=============================
- TYPOGRAPHY
+TYPOGRAPHY
 =============================*/
 
 h1,h2,h3,h4,h5,h6{
-    margin-top:0;
+    margin:0;
 }
 
 h1, h2 {
-  font-family: 'Kat Tail';
-  font-size: 60px;
-  color: $rose;
+    font-family: 'Kat Tail';
+    font-size: 60px;
+    color: $rose;
 }
 
 h3 {
-  margin-top: 0;
-  font-family: 'Raleway';
-  font-size: 36px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: $rose;
-  &.script{
-      font-family:'Kat Tail';
-      text-transform:none;
-      letter-spacing: 0;
-  }
+    margin-top: 0;
+    font-family: 'Raleway';
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $rose;
+    &.script{
+        font-family:'Kat Tail';
+        font-size:48px;
+        text-transform:none;
+        letter-spacing: 0;
+    }
 }
 
 h4{
@@ -112,38 +113,47 @@ h5{
     color:$bronze;
 }
 
+h6{
+    font-family: 'Raleway';
+    font-size:16px;
+    font-weight:400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:$rose;
+}
+
 p {
-  font-family: 'Libre Baskerville';
-  font-size: 18px;
-  line-height: 30px;
-  color:$bronze;
+    font-family: 'Libre Baskerville';
+    font-size: 18px;
+    line-height: 30px;
+    color:$bronze;
 }
 
 a:hover {}
 
 hr {
-  width: 60%;
-  height: 2px;
-  margin: 60px auto;
-  border: none;
-  background-color: #BBB0A6;
+    width: 60%;
+    height: 2px;
+    margin: 60px auto;
+    border: none;
+    background-color: #BBB0A6;
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin:0;
+    padding:0;
 }
 
 .alignleft {
-  text-align: left;
+    text-align: left;
 }
 
 .aligncenter {
-  text-align: center;
+    text-align: center;
 }
 
 .alignright {
-  text-align: right;
+    text-align: right;
 }
 
 /* Template Typography */

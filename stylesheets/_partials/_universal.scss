@@ -196,3 +196,24 @@ img{
         padding:0 30px;
     }
 }
+
+/* Articles */
+
+article{
+    margin-bottom:60px;
+    .featured-img{
+        width:100%;
+        height:0;
+        padding-top:56.25%; // 16:9 Aspect Ratio
+        overflow:hidden;
+        position:relative;
+        img{
+            width:100%;
+            min-height:100%;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+    }
+}

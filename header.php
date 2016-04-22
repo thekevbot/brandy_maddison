@@ -19,9 +19,9 @@
             <ul class="main-nav">
                 <li class="nav-cell nav-left">
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="page-about.php">About Us</a></li>
+                        <li><a href="page-portfolio.php">Portfolio</a></li>
+                        <li><a href="page-services.php">Services</a></li>
                     </ul>
                 </li>
                 <li class="nav-cell nav-logo">
@@ -29,9 +29,9 @@
                 </li>
                 <li class="nav-cell nav-right">
                     <ul>
-                        <li><a href="#">Kind Words</a></li>
-                        <li><a href="#">Say Hello</a></li>
-                        <li><a href="#">Journal</a></li>
+                        <li><a href="page-testimonials.php">Kind Words</a></li>
+                        <li><a href="page-contact.php">Say Hello</a></li>
+                        <li><a href="page-journal.php">Journal</a></li>
                     </ul>
                 </li>
                 <li class="btn-mobile-menu"><a href="javascript:;">Menu</a></li>

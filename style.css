@@ -103,7 +103,7 @@
 }
 
 /*=============================
- FONTS
+FONTS
 =============================*/
 @font-face {
   font-family: 'Kat Tail';
@@ -178,11 +178,11 @@
 }
 
 /*=============================
- TYPOGRAPHY
+TYPOGRAPHY
 =============================*/
 /* line 78, stylesheets/_partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin: 0;
 }
 
 /* line 82, stylesheets/_partials/_typography.scss */
@@ -205,11 +205,12 @@ h3 {
 /* line 96, stylesheets/_partials/_typography.scss */
 h3.script {
   font-family: 'Kat Tail';
+  font-size: 48px;
   text-transform: none;
   letter-spacing: 0;
 }
 
-/* line 106, stylesheets/_partials/_typography.scss */
+/* line 107, stylesheets/_partials/_typography.scss */
 h5 {
   font-family: 'Raleway';
   font-size: 20px;
@@ -219,7 +220,17 @@ h5 {
   color: #767662;
 }
 
-/* line 115, stylesheets/_partials/_typography.scss */
+/* line 116, stylesheets/_partials/_typography.scss */
+h6 {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ddbcb0;
+}
+
+/* line 125, stylesheets/_partials/_typography.scss */
 p {
   font-family: 'Libre Baskerville';
   font-size: 18px;
@@ -227,7 +238,7 @@ p {
   color: #767662;
 }
 
-/* line 124, stylesheets/_partials/_typography.scss */
+/* line 134, stylesheets/_partials/_typography.scss */
 hr {
   width: 60%;
   height: 2px;
@@ -236,29 +247,29 @@ hr {
   background-color: #BBB0A6;
 }
 
-/* line 132, stylesheets/_partials/_typography.scss */
+/* line 142, stylesheets/_partials/_typography.scss */
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 137, stylesheets/_partials/_typography.scss */
+/* line 147, stylesheets/_partials/_typography.scss */
 .alignleft {
   text-align: left;
 }
 
-/* line 141, stylesheets/_partials/_typography.scss */
+/* line 151, stylesheets/_partials/_typography.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 145, stylesheets/_partials/_typography.scss */
+/* line 155, stylesheets/_partials/_typography.scss */
 .alignright {
   text-align: right;
 }
 
 /* Template Typography */
-/* line 151, stylesheets/_partials/_typography.scss */
+/* line 161, stylesheets/_partials/_typography.scss */
 h1.page-head {
   margin: 0;
   padding: 4px;
@@ -267,7 +278,7 @@ h1.page-head {
   font-weight: 300;
   color: #fff;
 }
-/* line 158, stylesheets/_partials/_typography.scss */
+/* line 168, stylesheets/_partials/_typography.scss */
 h1.page-head span {
   width: 100%;
   height: 100%;
@@ -493,6 +504,29 @@ img.fh {
   padding: 0 30px;
 }
 
+/* Articles */
+/* line 202, stylesheets/_partials/_universal.scss */
+article {
+  margin-bottom: 60px;
+}
+/* line 204, stylesheets/_partials/_universal.scss */
+article .featured-img {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 210, stylesheets/_partials/_universal.scss */
+article .featured-img img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*=============================
  NAVIGATION
 =============================*/
@@ -607,21 +641,45 @@ ul.main-nav li a {
 /*=============================
  SIDEBAR
 =============================*/
-/* line 6, stylesheets/_partials/_sidebar.scss */
+/* line 5, stylesheets/_partials/_sidebar.scss */
+.sidebar {
+  padding-bottom: 60px;
+}
+/* line 7, stylesheets/_partials/_sidebar.scss */
 .sidebar .social-nav {
   margin: 30px 0;
-  padding: 30px 0;
+  padding: 30px 0 20px 0;
   text-align: center;
   border-top: 2px solid #BBB0A6;
   border-bottom: 2px solid #BBB0A6;
 }
-/* line 12, stylesheets/_partials/_sidebar.scss */
+/* line 13, stylesheets/_partials/_sidebar.scss */
 .sidebar .social-nav .social-btn {
   font-size: 32px;
 }
-/* line 14, stylesheets/_partials/_sidebar.scss */
+/* line 15, stylesheets/_partials/_sidebar.scss */
 .sidebar .social-nav .social-btn a {
   color: #ddbcb0;
+}
+/* line 20, stylesheets/_partials/_sidebar.scss */
+.sidebar .insta-feed {
+  padding: 30px 0;
+  border-bottom: 2px solid #BBB0A6;
+}
+/* line 24, stylesheets/_partials/_sidebar.scss */
+.sidebar .categories {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-bottom: 2px solid #BBB0A6;
+  list-style: none;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-size: 18px;
+  line-height: 36px;
+}
+/* line 34, stylesheets/_partials/_sidebar.scss */
+.sidebar .categories li a {
+  color: #767662;
 }
 
 /* line 1, stylesheets/_partials/_journal.scss */
