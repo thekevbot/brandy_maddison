@@ -361,18 +361,19 @@ h1.page-head span {
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
+  border: none;
 }
-/* line 67, stylesheets/_partials/_universal.scss */
+/* line 68, stylesheets/_partials/_universal.scss */
 .btn:hover {
   text-decoration: none;
 }
 
-/* line 72, stylesheets/_partials/_universal.scss */
+/* line 73, stylesheets/_partials/_universal.scss */
 .btn-block {
   display: block;
 }
 
-/* line 77, stylesheets/_partials/_universal.scss */
+/* line 78, stylesheets/_partials/_universal.scss */
 .btn span {
   width: 100%;
   height: 100%;
@@ -380,7 +381,7 @@ h1.page-head span {
   display: block;
   background-color: #fff;
 }
-/* line 84, stylesheets/_partials/_universal.scss */
+/* line 85, stylesheets/_partials/_universal.scss */
 .btn em {
   display: block;
   font-family: 'Kat Tail';
@@ -388,29 +389,33 @@ h1.page-head span {
   text-transform: none;
   font-size: 72px;
 }
-/* line 92, stylesheets/_partials/_universal.scss */
+/* line 93, stylesheets/_partials/_universal.scss */
 .btn.btn-email .icon {
   font-size: 30px;
   float: left;
   margin: -6px 10px 0 0;
 }
+/* line 99, stylesheets/_partials/_universal.scss */
+.btn.aligncenter {
+  margin: 0 auto;
+}
 
-/* line 100, stylesheets/_partials/_universal.scss */
+/* line 104, stylesheets/_partials/_universal.scss */
 .btn-xs span {
   padding: 5px 20px;
 }
 
-/* line 104, stylesheets/_partials/_universal.scss */
+/* line 108, stylesheets/_partials/_universal.scss */
 .btn-lg span {
   padding: 15px 60px;
 }
 
-/* line 108, stylesheets/_partials/_universal.scss */
+/* line 112, stylesheets/_partials/_universal.scss */
 .btn-xl span {
   padding: 35px 40px 25px 40px;
 }
 
-/* line 112, stylesheets/_partials/_universal.scss */
+/* line 116, stylesheets/_partials/_universal.scss */
 .btn-gold {
   color: #DDBCB0;
   background: -moz-linear-gradient(left, #cda349 0%, #e2c675 22%, #edd6a1 49%, #ebd39a 55%, #e2c675 72%, #cda349 100%);
@@ -422,13 +427,13 @@ h1.page-head span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda349', endColorstr='#cda349',GradientType=1 );
   /* IE6-9 */
 }
-/* line 122, stylesheets/_partials/_universal.scss */
+/* line 126, stylesheets/_partials/_universal.scss */
 .btn-gold:focus, .btn-gold:hover {
   color: #DDBCB0;
 }
 
 /* Images */
-/* line 129, stylesheets/_partials/_universal.scss */
+/* line 133, stylesheets/_partials/_universal.scss */
 .mobile-crop {
   width: 100%;
   height: 0;
@@ -436,11 +441,11 @@ h1.page-head span {
   overflow: hidden;
   position: relative;
 }
-/* line 135, stylesheets/_partials/_universal.scss */
+/* line 139, stylesheets/_partials/_universal.scss */
 .mobile-crop.circle {
   border-radius: 50%;
 }
-/* line 138, stylesheets/_partials/_universal.scss */
+/* line 142, stylesheets/_partials/_universal.scss */
 .mobile-crop img {
   position: absolute;
   top: 0;
@@ -448,17 +453,17 @@ h1.page-head span {
   transform: translateX(-50%);
 }
 
-/* line 146, stylesheets/_partials/_universal.scss */
+/* line 150, stylesheets/_partials/_universal.scss */
 .crop {
   position: relative;
 }
-/* line 148, stylesheets/_partials/_universal.scss */
+/* line 152, stylesheets/_partials/_universal.scss */
 .crop.square {
   width: 100%;
   height: 0;
   padding-top: 100%;
 }
-/* line 153, stylesheets/_partials/_universal.scss */
+/* line 157, stylesheets/_partials/_universal.scss */
 .crop img {
   min-width: 100%;
   min-height: 100%;
@@ -468,35 +473,81 @@ h1.page-head span {
   transform: translate(-50%, -50%);
 }
 
-/* line 164, stylesheets/_partials/_universal.scss */
+/* line 167, stylesheets/_partials/_universal.scss */
+img {
+  display: block;
+}
+/* line 169, stylesheets/_partials/_universal.scss */
 img.fw {
   width: 100%;
 }
-/* line 167, stylesheets/_partials/_universal.scss */
+/* line 172, stylesheets/_partials/_universal.scss */
 img.fh {
   width: 100%;
 }
+/* line 175, stylesheets/_partials/_universal.scss */
+img.aligncenter {
+  margin: 0 auto;
+}
 
 @media (min-width: 768px) {
-  /* line 173, stylesheets/_partials/_universal.scss */
+  /* line 181, stylesheets/_partials/_universal.scss */
   .mobile-crop {
     height: auto;
     padding: 0;
     overflow: visible;
   }
-  /* line 177, stylesheets/_partials/_universal.scss */
+  /* line 185, stylesheets/_partials/_universal.scss */
   .mobile-crop img {
     position: static;
     transform: translate(0);
   }
 }
+/* Lists */
+/* line 194, stylesheets/_partials/_universal.scss */
+.icon-list {
+  margin-top: 30px;
+  list-style: none;
+  font-family: 'Libre Baskerville';
+  font-size: 18px;
+  line-height: 30px;
+  color: #767662;
+}
+/* line 201, stylesheets/_partials/_universal.scss */
+.icon-list li {
+  margin-bottom: 15px;
+}
+/* line 203, stylesheets/_partials/_universal.scss */
+.icon-list li .icon {
+  margin-right: 15px;
+  float: left;
+}
+/* line 206, stylesheets/_partials/_universal.scss */
+.icon-list li .icon.sm {
+  font-size: 24px;
+}
+/* line 209, stylesheets/_partials/_universal.scss */
+.icon-list li .icon.lg {
+  font-size: 36px;
+}
+
+/* Forms */
+/* line 219, stylesheets/_partials/_universal.scss */
+.form-base label {
+  font-family: 'Raleway';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #767662;
+  font-weight: 300;
+}
+
 /* Instagram Feed */
-/* line 186, stylesheets/_partials/_universal.scss */
+/* line 230, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 189, stylesheets/_partials/_universal.scss */
+/* line 233, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -504,17 +555,17 @@ img.fh {
   padding-left: 5px;
   position: relative;
 }
-/* line 196, stylesheets/_partials/_universal.scss */
+/* line 240, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 200, stylesheets/_partials/_universal.scss */
+/* line 244, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 204, stylesheets/_partials/_universal.scss */
+/* line 248, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -524,17 +575,17 @@ img.fh {
 }
 
 /* Logo Lists */
-/* line 216, stylesheets/_partials/_universal.scss */
+/* line 260, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 223, stylesheets/_partials/_universal.scss */
+/* line 267, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 225, stylesheets/_partials/_universal.scss */
+/* line 269, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -542,7 +593,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 231, stylesheets/_partials/_universal.scss */
+/* line 275, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;

@@ -64,6 +64,7 @@
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
+  border:none;
   &:hover {
     text-decoration: none;
   }
@@ -94,6 +95,9 @@
         float:left;
         margin:-6px 10px 0 0;
     }
+  }
+  &.aligncenter{
+      margin:0 auto;
   }
 }
 
@@ -161,11 +165,15 @@
 }
 
 img{
+    display:block;
     &.fw{
         width:100%;
     }
     &.fh{
         width:100%;
+    }
+    &.aligncenter{
+        margin:0 auto;
     }
 }
 
@@ -178,6 +186,42 @@ img{
             position: static;
             transform:translate(0);
         }
+    }
+}
+
+/* Lists */
+
+.icon-list{
+    margin-top:30px;
+    list-style: none;
+    font-family: 'Libre Baskerville';
+    font-size: 18px;
+    line-height: 30px;
+    color:$bronze;
+    li{
+        margin-bottom:15px;
+        .icon{
+            margin-right:15px;
+            float:left;
+            &.sm{
+                font-size:24px;
+            }
+            &.lg{
+                font-size:36px;
+            }
+        }
+    }
+}
+
+/* Forms */
+
+.form-base{
+    label{
+        font-family:'Raleway';
+        font-size:18px;
+        text-transform:uppercase;
+        color:$bronze;
+        font-weight:300;
     }
 }
 
