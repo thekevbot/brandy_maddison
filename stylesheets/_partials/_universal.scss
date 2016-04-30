@@ -148,11 +148,15 @@
 }
 
 .crop{
+    width:100%;
+    height:0;
     position:relative;
+    overflow:hidden;
     &.square{
-        width:100%;
-        height:0;
         padding-top:100%;
+    }
+    &.portrait{
+        padding-top:130%;
     }
     img{
         min-width:100%;

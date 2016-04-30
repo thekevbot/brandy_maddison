@@ -455,15 +455,20 @@ h1.page-head span {
 
 /* line 150, stylesheets/_partials/_universal.scss */
 .crop {
-  position: relative;
-}
-/* line 152, stylesheets/_partials/_universal.scss */
-.crop.square {
   width: 100%;
   height: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 155, stylesheets/_partials/_universal.scss */
+.crop.square {
   padding-top: 100%;
 }
-/* line 157, stylesheets/_partials/_universal.scss */
+/* line 158, stylesheets/_partials/_universal.scss */
+.crop.portrait {
+  padding-top: 130%;
+}
+/* line 161, stylesheets/_partials/_universal.scss */
 .crop img {
   min-width: 100%;
   min-height: 100%;
@@ -473,38 +478,38 @@ h1.page-head span {
   transform: translate(-50%, -50%);
 }
 
-/* line 167, stylesheets/_partials/_universal.scss */
+/* line 171, stylesheets/_partials/_universal.scss */
 img {
   display: block;
 }
-/* line 169, stylesheets/_partials/_universal.scss */
+/* line 173, stylesheets/_partials/_universal.scss */
 img.fw {
   width: 100%;
 }
-/* line 172, stylesheets/_partials/_universal.scss */
+/* line 176, stylesheets/_partials/_universal.scss */
 img.fh {
   width: 100%;
 }
-/* line 175, stylesheets/_partials/_universal.scss */
+/* line 179, stylesheets/_partials/_universal.scss */
 img.aligncenter {
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  /* line 181, stylesheets/_partials/_universal.scss */
+  /* line 185, stylesheets/_partials/_universal.scss */
   .mobile-crop {
     height: auto;
     padding: 0;
     overflow: visible;
   }
-  /* line 185, stylesheets/_partials/_universal.scss */
+  /* line 189, stylesheets/_partials/_universal.scss */
   .mobile-crop img {
     position: static;
     transform: translate(0);
   }
 }
 /* Lists */
-/* line 194, stylesheets/_partials/_universal.scss */
+/* line 198, stylesheets/_partials/_universal.scss */
 .icon-list {
   margin-top: 30px;
   list-style: none;
@@ -513,26 +518,26 @@ img.aligncenter {
   line-height: 30px;
   color: #767662;
 }
-/* line 201, stylesheets/_partials/_universal.scss */
+/* line 205, stylesheets/_partials/_universal.scss */
 .icon-list li {
   margin-bottom: 15px;
 }
-/* line 203, stylesheets/_partials/_universal.scss */
+/* line 207, stylesheets/_partials/_universal.scss */
 .icon-list li .icon {
   margin-right: 15px;
   float: left;
 }
-/* line 206, stylesheets/_partials/_universal.scss */
+/* line 210, stylesheets/_partials/_universal.scss */
 .icon-list li .icon.sm {
   font-size: 24px;
 }
-/* line 209, stylesheets/_partials/_universal.scss */
+/* line 213, stylesheets/_partials/_universal.scss */
 .icon-list li .icon.lg {
   font-size: 36px;
 }
 
 /* Forms */
-/* line 219, stylesheets/_partials/_universal.scss */
+/* line 223, stylesheets/_partials/_universal.scss */
 .form-base label {
   font-family: 'Raleway';
   font-size: 18px;
@@ -542,12 +547,12 @@ img.aligncenter {
 }
 
 /* Instagram Feed */
-/* line 230, stylesheets/_partials/_universal.scss */
+/* line 234, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 233, stylesheets/_partials/_universal.scss */
+/* line 237, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -555,17 +560,17 @@ img.aligncenter {
   padding-left: 5px;
   position: relative;
 }
-/* line 240, stylesheets/_partials/_universal.scss */
+/* line 244, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 244, stylesheets/_partials/_universal.scss */
+/* line 248, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 248, stylesheets/_partials/_universal.scss */
+/* line 252, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -575,17 +580,17 @@ img.aligncenter {
 }
 
 /* Logo Lists */
-/* line 260, stylesheets/_partials/_universal.scss */
+/* line 264, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 267, stylesheets/_partials/_universal.scss */
+/* line 271, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 269, stylesheets/_partials/_universal.scss */
+/* line 273, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -593,7 +598,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 275, stylesheets/_partials/_universal.scss */
+/* line 279, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;
@@ -757,6 +762,15 @@ ul.main-nav li a {
 /* line 34, stylesheets/_partials/_sidebar.scss */
 .sidebar .categories li a {
   color: #767662;
+}
+
+/* line 2, stylesheets/_partials/_services.scss */
+.service .crop {
+  margin-bottom: 30px;
+}
+/* line 5, stylesheets/_partials/_services.scss */
+.service h6 {
+  margin-bottom: 30px;
 }
 
 /* line 2, stylesheets/_partials/_testimonials.scss */
