@@ -1,0 +1,34 @@
+.portfolio-item{
+    display:block;
+    position:relative;
+    text-align:center;
+    margin-bottom:30px;
+    .portfolio-meta{
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:1;
+        background-color:$sand-opaque;
+        opacity:0;
+        transition:all 0.2s ease-in-out;
+        h2{
+            font-family:'Libre Baskerville';
+            font-weight:700;
+            font-size:28px;
+            color:$white;
+        }
+        h3{
+            font-family:'Raleway';
+            font-size:20px;
+            color:$white;
+            text-transform: uppercase;
+        }
+    }
+    &:hover{
+        .portfolio-meta{
+            opacity:1;
+        }
+    }
+}

@@ -54,9 +54,9 @@
                 </div>
                 <h6 class="aligncenter">Categories</h6>
                 <ul class="categories">
-                    <li><a class="#">Category</a></li>
-                    <li><a class="#">Category</a></li>
-                    <li><a class="#">Category</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Category</a></li>
                 </ul>
                 <a class="btn btn-gold btn-block" href="#"><span>Say Hello</span></a>
             </div>

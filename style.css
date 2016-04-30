@@ -314,9 +314,10 @@ h1.page-head span {
 /* line 22, stylesheets/_partials/_universal.scss */
 .wrapper {
   width: 100%;
+  height: 100%;
   display: table;
 }
-/* line 25, stylesheets/_partials/_universal.scss */
+/* line 26, stylesheets/_partials/_universal.scss */
 .wrapper .wrapper-inner {
   display: table-cell;
   vertical-align: middle;
@@ -326,32 +327,37 @@ h1.page-head span {
  COMPONENENTS
 =============================*/
 /* Social Buttons */
-/* line 37, stylesheets/_partials/_universal.scss */
+/* line 38, stylesheets/_partials/_universal.scss */
 .social-nav {
   list-style: none;
 }
-/* line 39, stylesheets/_partials/_universal.scss */
+/* line 40, stylesheets/_partials/_universal.scss */
 .social-nav li {
   display: inline-block;
   margin: 0 3px;
 }
-/* line 42, stylesheets/_partials/_universal.scss */
+/* line 43, stylesheets/_partials/_universal.scss */
 .social-nav li a:hover {
   text-decoration: none;
 }
 
-/* line 48, stylesheets/_partials/_universal.scss */
+/* line 49, stylesheets/_partials/_universal.scss */
 .social-dark a {
   color: #BBB0A6;
 }
 
-/* line 52, stylesheets/_partials/_universal.scss */
+/* line 53, stylesheets/_partials/_universal.scss */
 .social-light a {
   color: #FFF;
 }
 
+/* line 57, stylesheets/_partials/_universal.scss */
+.social-rose a {
+  color: #ddbcb0;
+}
+
 /* Buttons */
-/* line 58, stylesheets/_partials/_universal.scss */
+/* line 63, stylesheets/_partials/_universal.scss */
 .btn {
   padding: 2px;
   display: inline-block;
@@ -363,17 +369,17 @@ h1.page-head span {
   text-transform: uppercase;
   border: none;
 }
-/* line 68, stylesheets/_partials/_universal.scss */
+/* line 73, stylesheets/_partials/_universal.scss */
 .btn:hover {
   text-decoration: none;
 }
 
-/* line 73, stylesheets/_partials/_universal.scss */
+/* line 78, stylesheets/_partials/_universal.scss */
 .btn-block {
   display: block;
 }
 
-/* line 78, stylesheets/_partials/_universal.scss */
+/* line 83, stylesheets/_partials/_universal.scss */
 .btn span {
   width: 100%;
   height: 100%;
@@ -381,7 +387,7 @@ h1.page-head span {
   display: block;
   background-color: #fff;
 }
-/* line 85, stylesheets/_partials/_universal.scss */
+/* line 90, stylesheets/_partials/_universal.scss */
 .btn em {
   display: block;
   font-family: 'Kat Tail';
@@ -389,33 +395,33 @@ h1.page-head span {
   text-transform: none;
   font-size: 72px;
 }
-/* line 93, stylesheets/_partials/_universal.scss */
+/* line 98, stylesheets/_partials/_universal.scss */
 .btn.btn-email .icon {
   font-size: 30px;
   float: left;
   margin: -6px 10px 0 0;
 }
-/* line 99, stylesheets/_partials/_universal.scss */
+/* line 104, stylesheets/_partials/_universal.scss */
 .btn.aligncenter {
   margin: 0 auto;
 }
 
-/* line 104, stylesheets/_partials/_universal.scss */
+/* line 109, stylesheets/_partials/_universal.scss */
 .btn-xs span {
   padding: 5px 20px;
 }
 
-/* line 108, stylesheets/_partials/_universal.scss */
+/* line 113, stylesheets/_partials/_universal.scss */
 .btn-lg span {
   padding: 15px 60px;
 }
 
-/* line 112, stylesheets/_partials/_universal.scss */
+/* line 117, stylesheets/_partials/_universal.scss */
 .btn-xl span {
   padding: 35px 40px 25px 40px;
 }
 
-/* line 116, stylesheets/_partials/_universal.scss */
+/* line 121, stylesheets/_partials/_universal.scss */
 .btn-gold {
   color: #DDBCB0;
   background: -moz-linear-gradient(left, #cda349 0%, #e2c675 22%, #edd6a1 49%, #ebd39a 55%, #e2c675 72%, #cda349 100%);
@@ -427,13 +433,13 @@ h1.page-head span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda349', endColorstr='#cda349',GradientType=1 );
   /* IE6-9 */
 }
-/* line 126, stylesheets/_partials/_universal.scss */
+/* line 131, stylesheets/_partials/_universal.scss */
 .btn-gold:focus, .btn-gold:hover {
   color: #DDBCB0;
 }
 
 /* Images */
-/* line 133, stylesheets/_partials/_universal.scss */
+/* line 138, stylesheets/_partials/_universal.scss */
 .mobile-crop {
   width: 100%;
   height: 0;
@@ -441,11 +447,11 @@ h1.page-head span {
   overflow: hidden;
   position: relative;
 }
-/* line 139, stylesheets/_partials/_universal.scss */
+/* line 144, stylesheets/_partials/_universal.scss */
 .mobile-crop.circle {
   border-radius: 50%;
 }
-/* line 142, stylesheets/_partials/_universal.scss */
+/* line 147, stylesheets/_partials/_universal.scss */
 .mobile-crop img {
   position: absolute;
   top: 0;
@@ -453,22 +459,22 @@ h1.page-head span {
   transform: translateX(-50%);
 }
 
-/* line 150, stylesheets/_partials/_universal.scss */
+/* line 155, stylesheets/_partials/_universal.scss */
 .crop {
   width: 100%;
   height: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 155, stylesheets/_partials/_universal.scss */
+/* line 160, stylesheets/_partials/_universal.scss */
 .crop.square {
   padding-top: 100%;
 }
-/* line 158, stylesheets/_partials/_universal.scss */
+/* line 163, stylesheets/_partials/_universal.scss */
 .crop.portrait {
   padding-top: 130%;
 }
-/* line 161, stylesheets/_partials/_universal.scss */
+/* line 166, stylesheets/_partials/_universal.scss */
 .crop img {
   min-width: 100%;
   min-height: 100%;
@@ -478,38 +484,38 @@ h1.page-head span {
   transform: translate(-50%, -50%);
 }
 
-/* line 171, stylesheets/_partials/_universal.scss */
+/* line 176, stylesheets/_partials/_universal.scss */
 img {
   display: block;
 }
-/* line 173, stylesheets/_partials/_universal.scss */
+/* line 178, stylesheets/_partials/_universal.scss */
 img.fw {
   width: 100%;
 }
-/* line 176, stylesheets/_partials/_universal.scss */
+/* line 181, stylesheets/_partials/_universal.scss */
 img.fh {
   width: 100%;
 }
-/* line 179, stylesheets/_partials/_universal.scss */
+/* line 184, stylesheets/_partials/_universal.scss */
 img.aligncenter {
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  /* line 185, stylesheets/_partials/_universal.scss */
+  /* line 190, stylesheets/_partials/_universal.scss */
   .mobile-crop {
     height: auto;
     padding: 0;
     overflow: visible;
   }
-  /* line 189, stylesheets/_partials/_universal.scss */
+  /* line 194, stylesheets/_partials/_universal.scss */
   .mobile-crop img {
     position: static;
     transform: translate(0);
   }
 }
 /* Lists */
-/* line 198, stylesheets/_partials/_universal.scss */
+/* line 203, stylesheets/_partials/_universal.scss */
 .icon-list {
   margin-top: 30px;
   list-style: none;
@@ -518,26 +524,26 @@ img.aligncenter {
   line-height: 30px;
   color: #767662;
 }
-/* line 205, stylesheets/_partials/_universal.scss */
+/* line 210, stylesheets/_partials/_universal.scss */
 .icon-list li {
   margin-bottom: 15px;
 }
-/* line 207, stylesheets/_partials/_universal.scss */
+/* line 212, stylesheets/_partials/_universal.scss */
 .icon-list li .icon {
   margin-right: 15px;
   float: left;
 }
-/* line 210, stylesheets/_partials/_universal.scss */
+/* line 215, stylesheets/_partials/_universal.scss */
 .icon-list li .icon.sm {
   font-size: 24px;
 }
-/* line 213, stylesheets/_partials/_universal.scss */
+/* line 218, stylesheets/_partials/_universal.scss */
 .icon-list li .icon.lg {
   font-size: 36px;
 }
 
 /* Forms */
-/* line 223, stylesheets/_partials/_universal.scss */
+/* line 228, stylesheets/_partials/_universal.scss */
 .form-base label {
   font-family: 'Raleway';
   font-size: 18px;
@@ -547,12 +553,12 @@ img.aligncenter {
 }
 
 /* Instagram Feed */
-/* line 234, stylesheets/_partials/_universal.scss */
+/* line 239, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 237, stylesheets/_partials/_universal.scss */
+/* line 242, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -560,17 +566,17 @@ img.aligncenter {
   padding-left: 5px;
   position: relative;
 }
-/* line 244, stylesheets/_partials/_universal.scss */
+/* line 249, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 248, stylesheets/_partials/_universal.scss */
+/* line 253, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 252, stylesheets/_partials/_universal.scss */
+/* line 257, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -580,17 +586,17 @@ img.aligncenter {
 }
 
 /* Logo Lists */
-/* line 264, stylesheets/_partials/_universal.scss */
+/* line 269, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 271, stylesheets/_partials/_universal.scss */
+/* line 276, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 273, stylesheets/_partials/_universal.scss */
+/* line 278, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -598,7 +604,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 279, stylesheets/_partials/_universal.scss */
+/* line 284, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;
@@ -764,6 +770,44 @@ ul.main-nav li a {
   color: #767662;
 }
 
+/* line 1, stylesheets/_partials/_portfolio.scss */
+.portfolio-item {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 6, stylesheets/_partials/_portfolio.scss */
+.portfolio-item .portfolio-meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(187, 176, 166, 0.8);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+/* line 16, stylesheets/_partials/_portfolio.scss */
+.portfolio-item .portfolio-meta h2 {
+  font-family: 'Libre Baskerville';
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+/* line 22, stylesheets/_partials/_portfolio.scss */
+.portfolio-item .portfolio-meta h3 {
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 30, stylesheets/_partials/_portfolio.scss */
+.portfolio-item:hover .portfolio-meta {
+  opacity: 1;
+}
+
 /* line 2, stylesheets/_partials/_services.scss */
 .service .crop {
   margin-bottom: 30px;
@@ -811,6 +855,39 @@ ul.main-nav li a {
 /* line 25, stylesheets/_partials/_journal.scss */
 .article-head .categories li {
   display: inline;
+}
+
+/* line 31, stylesheets/_partials/_journal.scss */
+.featured-img {
+  margin-bottom: 30px;
+}
+
+/* line 35, stylesheets/_partials/_journal.scss */
+.community {
+  margin-top: 30px;
+}
+/* line 39, stylesheets/_partials/_journal.scss */
+.community .social-nav li:first-child {
+  font-family: 'Raleway';
+  font-size: 18px;
+  color: #ddbcb0;
+  text-transform: uppercase;
+}
+/* line 46, stylesheets/_partials/_journal.scss */
+.community .social-nav .social-btn {
+  transform: translateY(5px);
+}
+/* line 48, stylesheets/_partials/_journal.scss */
+.community .social-nav .social-btn .icon {
+  font-size: 24px;
+}
+
+/* line 55, stylesheets/_partials/_journal.scss */
+.comments {
+  margin: 30px 0 60px 0;
+  padding: 60px 0;
+  border-top: 2px solid #BBB0A6;
+  border-bottom: 2px solid #BBB0A6;
 }
 
 /*=============================
