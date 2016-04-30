@@ -25,7 +25,9 @@
                     </ul>
                 </li>
                 <li class="nav-cell nav-logo">
-                    <img src="img/logo-bme.svg" alt="Brandy Maddison Events"/>
+                    <a href="index.php">
+                        <img src="img/logo-bme.svg" alt="Brandy Maddison Events"/>
+                    </a>
                 </li>
                 <li class="nav-cell nav-right">
                     <ul>

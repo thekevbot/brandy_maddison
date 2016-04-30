@@ -240,7 +240,7 @@ p {
 
 /* line 134, stylesheets/_partials/_typography.scss */
 hr {
-  width: 60%;
+  width: 80%;
   height: 2px;
   margin: 60px auto;
   border: none;
@@ -293,7 +293,7 @@ h1.page-head span {
 /* line 5, stylesheets/_partials/_universal.scss */
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -401,11 +401,16 @@ h1.page-head span {
 }
 
 /* line 104, stylesheets/_partials/_universal.scss */
+.btn-lg span {
+  padding: 15px 60px;
+}
+
+/* line 108, stylesheets/_partials/_universal.scss */
 .btn-xl span {
   padding: 35px 40px 25px 40px;
 }
 
-/* line 108, stylesheets/_partials/_universal.scss */
+/* line 112, stylesheets/_partials/_universal.scss */
 .btn-gold {
   color: #DDBCB0;
   background: -moz-linear-gradient(left, #cda349 0%, #e2c675 22%, #edd6a1 49%, #ebd39a 55%, #e2c675 72%, #cda349 100%);
@@ -417,13 +422,13 @@ h1.page-head span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda349', endColorstr='#cda349',GradientType=1 );
   /* IE6-9 */
 }
-/* line 118, stylesheets/_partials/_universal.scss */
+/* line 122, stylesheets/_partials/_universal.scss */
 .btn-gold:focus, .btn-gold:hover {
   color: #DDBCB0;
 }
 
 /* Images */
-/* line 125, stylesheets/_partials/_universal.scss */
+/* line 129, stylesheets/_partials/_universal.scss */
 .mobile-crop {
   width: 100%;
   height: 0;
@@ -431,11 +436,11 @@ h1.page-head span {
   overflow: hidden;
   position: relative;
 }
-/* line 131, stylesheets/_partials/_universal.scss */
+/* line 135, stylesheets/_partials/_universal.scss */
 .mobile-crop.circle {
   border-radius: 50%;
 }
-/* line 134, stylesheets/_partials/_universal.scss */
+/* line 138, stylesheets/_partials/_universal.scss */
 .mobile-crop img {
   position: absolute;
   top: 0;
@@ -443,35 +448,55 @@ h1.page-head span {
   transform: translateX(-50%);
 }
 
-/* line 143, stylesheets/_partials/_universal.scss */
+/* line 146, stylesheets/_partials/_universal.scss */
+.crop {
+  position: relative;
+}
+/* line 148, stylesheets/_partials/_universal.scss */
+.crop.square {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+/* line 153, stylesheets/_partials/_universal.scss */
+.crop img {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 164, stylesheets/_partials/_universal.scss */
 img.fw {
   width: 100%;
 }
-/* line 146, stylesheets/_partials/_universal.scss */
+/* line 167, stylesheets/_partials/_universal.scss */
 img.fh {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  /* line 152, stylesheets/_partials/_universal.scss */
+  /* line 173, stylesheets/_partials/_universal.scss */
   .mobile-crop {
     height: auto;
     padding: 0;
     overflow: visible;
   }
-  /* line 156, stylesheets/_partials/_universal.scss */
+  /* line 177, stylesheets/_partials/_universal.scss */
   .mobile-crop img {
     position: static;
     transform: translate(0);
   }
 }
 /* Instagram Feed */
-/* line 165, stylesheets/_partials/_universal.scss */
+/* line 186, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 168, stylesheets/_partials/_universal.scss */
+/* line 189, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -479,17 +504,17 @@ img.fh {
   padding-left: 5px;
   position: relative;
 }
-/* line 175, stylesheets/_partials/_universal.scss */
+/* line 196, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 179, stylesheets/_partials/_universal.scss */
+/* line 200, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 183, stylesheets/_partials/_universal.scss */
+/* line 204, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -499,17 +524,17 @@ img.fh {
 }
 
 /* Logo Lists */
-/* line 195, stylesheets/_partials/_universal.scss */
+/* line 216, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 202, stylesheets/_partials/_universal.scss */
+/* line 223, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 204, stylesheets/_partials/_universal.scss */
+/* line 225, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -517,7 +542,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 210, stylesheets/_partials/_universal.scss */
+/* line 231, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;
@@ -624,13 +649,14 @@ ul.main-nav li a {
 =============================*/
 /* line 5, stylesheets/_partials/_banners.scss */
 .banner {
+  margin-bottom: 60px;
   position: relative;
 }
-/* line 7, stylesheets/_partials/_banners.scss */
+/* line 8, stylesheets/_partials/_banners.scss */
 .banner img {
   width: 100%;
 }
-/* line 10, stylesheets/_partials/_banners.scss */
+/* line 11, stylesheets/_partials/_banners.scss */
 .banner .page-head {
   position: absolute;
   top: 50%;
@@ -682,6 +708,11 @@ ul.main-nav li a {
   color: #767662;
 }
 
+/* line 2, stylesheets/_partials/_testimonials.scss */
+.testimonial .crop {
+  margin-bottom: 30px;
+}
+
 /* line 1, stylesheets/_partials/_journal.scss */
 .article-head {
   width: 100%;
@@ -723,6 +754,7 @@ ul.main-nav li a {
 /* line 5, stylesheets/_partials/_footer.scss */
 footer {
   width: 100%;
+  margin-top: 60px;
   padding: 60px 0;
   font-family: 'Raleway';
   text-align: center;
@@ -732,11 +764,11 @@ footer {
   background-size: cover;
   background-color: #DDBCB0;
 }
-/* line 15, stylesheets/_partials/_footer.scss */
+/* line 16, stylesheets/_partials/_footer.scss */
 footer .social-nav {
   font-size: 24px;
 }
-/* line 18, stylesheets/_partials/_footer.scss */
+/* line 19, stylesheets/_partials/_footer.scss */
 footer .btn-email {
   font-weight: 300;
   font-size: 16px;
@@ -746,7 +778,7 @@ footer .btn-email {
   letter-spacing: normal;
 }
 
-/* line 28, stylesheets/_partials/_footer.scss */
+/* line 29, stylesheets/_partials/_footer.scss */
 .colophon {
   display: block;
   font-size: 18px;
